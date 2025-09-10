@@ -184,8 +184,57 @@
     <div class="cta"><a href="mailto:vaishnaviharshavardhana@gmail.com">📩 Hire Vaishnavi</a></div>
   </section>
 
+  <!-- Charts Section -->
+  <section id="charts">
+    <h2>📊 Growth & Performance</h2>
+    <canvas id="engagementChart"></canvas>
+    <canvas id="campaignChart"></canvas>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact">
+    <h2>🚀 Ready to Grow With Me?</h2>
+    <p>Let’s collaborate to take your brand to the next level.</p>
+    <p>📧 <a href="mailto:vaishnaviharshavardhana@gmail.com">vaishnaviharshavardhana@gmail.com</a><br>
+       🔗 <a href="https://linkedin.com/in/vaishnavi-h-2683a7217" target="_blank">linkedin.com/in/vaishnavi-h-2683a7217</a><br>
+       📞 +91 8618300924</p>
+    <div class="cta"><a href="mailto:vaishnaviharshavardhana@gmail.com">📩 Hire Vaishnavi</a></div>
+  </section>
+
   <footer>
     <p>© 2025 Vaishnavi H | Marketing Growth Pitch Website</p>
   </footer>
+
+  <!-- Chart.js scripts -->
+  <script>
+    // Engagement Growth Over Time
+    new Chart(document.getElementById('engagementChart'), {
+      type: 'line',
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+          label: "Engagement Growth (%)",
+          data: [10, 25, 45, 60, 80, 120],
+          borderColor: "#008080",
+          fill: false,
+          tension: 0.3
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { display: true } } }
+    });
+
+    // Campaign Performance Breakdown
+    new Chart(document.getElementById('campaignChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ["SEO", "Social Media", "Community", "Email Marketing"],
+        datasets: [{
+          data: [30, 40, 20, 10],
+          backgroundColor: ["#008080", "#ffdd99", "#66b2b2", "#ffc14d"]
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { position: "bottom" } } }
+    });
+  </script>
 </body>
 </html>
