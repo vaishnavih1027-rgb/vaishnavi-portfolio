@@ -205,35 +205,5 @@
     <p>© 2025 Vaishnavi H | Marketing Growth Pitch Website</p>
   </footer>
 
-  <!-- Chart.js scripts -->
- 
-    // Engagement Growth Over Time
-    new Chart(document.getElementById('engagementChart'), {
-      type: 'line',
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-        datasets: [{
-          label: "Engagement Growth (%)",
-          data: [10, 25, 45, 60, 80, 120],
-          borderColor: "#008080",
-          fill: false,
-          tension: 0.3
-        }]
-      },
-      options: { responsive: true, plugins: { legend: { display: true } } }
-    });
-
-    // Campaign Performance Breakdown
-    new Chart(document.getElementById('campaignChart'), {
-      type: 'doughnut',
-      data: {
-        labels: ["SEO", "Social Media", "Community", "Email Marketing"],
-        datasets: [{
-          data: [30, 40, 20, 10],
-          backgroundColor: ["#008080", "#ffdd99", "#66b2b2", "#ffc14d"]
-        }]
-      },
-      options: { responsive: true, plugins: { legend: { position: "bottom" } } }
-    });
 </body>
 </html>
