@@ -55,35 +55,16 @@
          margin-bottom: 1rem; 
          text-align: center; } 
          /* Features / Cards */ 
-        /* PROFILE */
-.features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-
-/* PROJECTS */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-/* CERTIFICATIONS */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-/* HOBBIES */
-.hobby-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
+         .features {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 1.5rem;
+         margin-top: 2rem;
+         }
          , 
-        
+         .grid { display: grid; 
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+         gap: 1.5rem; margin-top: 2rem; } 
          .card { background: #f9f9f9; padding: 1.5rem; 
          border-radius: 10px; 
          box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
@@ -121,79 +102,16 @@
             <div class="metric">25+<span>Interns Trained</span></div>
             <div class="metric">3X<span>Campaign Engagement</span></div>
          </div>
-    
-      <!-- Projects -->
-<section id="projects">
-  <h2>📊 Data Analytics Projects</h2>
-  <div class="grid">
-
-    <!-- Decision Explorer -->
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/combo-chart.png"/>
-      <h3>Decision Explorer</h3>
-
-      <p>
-        Interactive data analytics application that enables exploration of multi-domain datasets with dynamic filtering and visualization using Power BI.
-      </p>
-
-      <p><b>Workflow:</b></p>
-      <ul style="text-align:left;">
-        <li>Select dataset category (Retail, SaaS, Fintech, Enterprise)</li>
-        <li>Load dataset dynamically using Python</li>
-        <li>Filter data by company</li>
-        <li>Apply query-based analysis</li>
-        <li>Visualize insights in Power BI dashboards</li>
-      </ul>
-
-      <br>
-
-      <a href="YOUR_STREAMLIT_LINK" target="_blank"
-         style="display:inline-block;margin:5px;background:#008080;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
-         🌐 Live Demo
-      </a>
-
-      <a href="https://github.com/vaishnavivardhana-cloud/Decision-Explorer-Using-PowerBI"
-         target="_blank"
-         style="display:inline-block;margin:5px;background:#333;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
-         💻 GitHub
-      </a>
-    </div>
-
-    <!-- Dynamic Data Analytics Engine -->
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/artificial-intelligence.png"/>
-      <h3>Dynamic Data Analytics Engine</h3>
-
-      <p>
-        Scalable data analytics system for processing structured datasets and generating domain-specific KPIs and analytical outputs.
-      </p>
-
-      <p><b>Workflow:</b></p>
-      <ul style="text-align:left;">
-        <li>Ingest dataset from multiple sources</li>
-        <li>Classify dataset based on schema</li>
-        <li>Apply predefined KPI calculations</li>
-        <li>Perform data transformation and aggregation</li>
-        <li>Output analytics-ready data for visualization</li>
-      </ul>
-
-      <br>
-
-      <a href="#" target="_blank"
-         style="display:inline-block;margin:5px;background:#008080;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
-         🌐 Live Demo
-      </a>
-
-      <a href="https://github.com/vaishnavivardhana-cloud/Dynamic-Data-Analytics-Engine"
-         target="_blank"
-         style="display:inline-block;margin:5px;background:#333;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
-         💻 GitHub
-      </a>
-    </div>
-
-  </div>
-</section>
-      
+      </section>
+      <!-- Case Studies --> 
+      <section id="projects">
+         <h2>📊 Case Studies (Projects)</h2>
+         <div class="grid">
+            <div class="card"><img src="https://img.icons8.com/color/96/shopping-cart.png"/><b>Smart Shopping Assistant</b><br>Built discount-tracking assistant → optimized consumer engagement.</div>
+            <div class="card"><img src="https://img.icons8.com/color/96/money.png"/><b>Automated Expense Manager</b><br>Excel → Power BI pipeline with UPI/CC integration, weekly dashboards.</div>
+            <div class="card"><img src="https://img.icons8.com/color/96/fabric.png"/><b>Fabric Intelligence</b><br>Analyzed 200+ fabrics for sourcing trends & visualization dashboards.</div>
+         </div>
+      </section>
       <!-- Skills --> 
       <section id="skills" class="skills-section">
          <h2>Skills & Expertise</h2>
@@ -254,48 +172,40 @@
             </div>
          </div>
       </section>
-      <!-- Certifications -->
-<section id="certs">
-  <h2>📜 Certifications</h2>
-  <div class="cert-grid">
-
-    <!-- AI & Analytics -->
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/certificate.png"/>
-      <h3>AI & Analytics</h3>
-      <ul>
-        <li>IBM AI Fundamentals</li>
-        <li>Data Science Essentials</li>
-        <li>RESTful API</li>
-        <li>Power BI Projects</li>
-      </ul>
-    </div>
-
-    <!-- Cloud & Data -->
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/data-configuration.png"/>
-      <h3>Cloud & Data</h3>
-      <ul>
-        <li>IBM Python for Data Science</li>
-        <li>Data Visualization with Power BI</li>
-        <li>Oracle Cloud Platform Application Integration Specialist</li>
-        <li>Oracle Digital Assistant Specialist</li>
-      </ul>
-    </div>
-
-    <!-- Academic & Domain -->
-    <div class="card">
-      <img src="https://img.icons8.com/color/96/university.png"/>
-      <h3>Academic & Domain</h3>
-      <ul>
-        <li>Minor Degree in Computer Science</li>
-        <li>Certificate in Finance</li>
-        <li>Smart Power Control</li>
-        <li>Wellness Certification</li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <!-- Certifications --> 
+      <section id="certs">
+         <h2>📜 Endorsements (Certifications)</h2>
+         <div class="grid">
+            <ul>
+               <div class="card">
+                  <img src="https://img.icons8.com/color/96/certificate.png"/><b>AI & Analytics</b><br> 
+                  <li>IBM AI Fundamentals </li>
+                  <li> Data Science Essentials </li>
+                  <li>RESTful API </li>
+                  <li>Power BI Projects </li>
+               </div>
+               <div class="card">
+                  <img src="https://img.icons8.com/color/96/data-configuration.png"/><b>Cloud & Data</b><br> 
+                  <li>IBM Python for Data Science </li>
+                  <li> Data Visualization with Power BI </li>
+                  <li>Oracle Cloud Dev </li>
+               </div>
+            </ul>
+            <ul>
+               <div class="card">
+                  <img src="https://img.icons8.com/color/96/seo.png"/><b>Digital Marketing</b><br> 
+                  <li>Intro to Digital Marketing </li>
+                  <li> SEO for Beginners </li>
+               </div>
+               <div class="card">
+                  <img src="https://img.icons8.com/color/96/university.png"/><b>Academic & Domain</b><br> 
+                  <li>Minor degree in computer science </li>
+                  <li> Certificate in Finance </li>
+                  <li> Smart Power Control </li>
+                  <li> Wellness Certification </li>
+               </div>
+            </ul>
+         </div>
       </section>
       <!-- Education --> 
       <section id="education">
