@@ -75,10 +75,22 @@
   font-size: 0.9rem;          /* smaller text */
   line-height: 1.4;
 }
-         .skills-grid {
+        .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);  /* FIXED 3 columns */
   gap: 1rem;
+}
+         .certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 per row */
+  gap: 1rem;
+}
+         .hobby-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;   /* keeps in one row */
+}
 }
          .card img {
   width: 35px;
@@ -205,19 +217,16 @@
       </ul>
 
       <br>
-<br>
-      <p>
-💻 <a href="https://github.com/vaishnavivardhana-cloud/Dynamic-Data-Analytics-Engine"
-target="_blank" style="color:#ffdd99;">
-GitHub Project
-</a>
-</p>
-      <p>
-🚀 <a href="https://dynamic-data-analytics-engine-gzutk6cd5lesyavdjxrans.streamlit.app/" 
-target="_blank" style="color:#ffdd99; font-weight:bold;">
-View Live Project
-</a>
-</p>
+<a href="https://dynamic-data-analytics-engine-gzutk6cd5lesyavdjxrans.streamlit.app/" target="_blank"
+         style="display:inline-block;margin:5px;background:#008080;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
+         🌐 Live Demo
+      </a>
+
+          <a href="https://github.com/vaishnavivardhana-cloud/Dynamic-Data-Analytics-Engine"
+         target="_blank"
+         style="display:inline-block;margin:5px;background:#333;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
+         💻 GitHub
+      </a>
     </div>
 
   </div>
@@ -287,7 +296,7 @@ View Live Project
          <h2>📜 Endorsements (Certifications)</h2>
          <div class="grid">
             <ul>
-               <div class="card">
+               <div class="certs-grid">
                   <img src="https://img.icons8.com/color/96/certificate.png"/><b>AI & Analytics</b><br> 
                   <li>IBM AI Fundamentals </li>
                   <li> Data Science Essentials </li>
@@ -354,7 +363,7 @@ View Live Project
       <!-- Hobbies --> 
       <section id="hobbies">
          <h2>🎨 Hobbies & Interests</h2>
-         <div class="grid">
+         <div class="hobby row">
             <div class="card"><img src="https://img.icons8.com/color/96/pencil.png"/><b>Sketching</b></div>
             <div class="card"><img src="https://img.icons8.com/color/96/paint-palette.png"/><b>Artworks</b></div>
             <div class="card"><img src="https://img.icons8.com/color/96/gardening.png"/><b>Gardening</b></div>
