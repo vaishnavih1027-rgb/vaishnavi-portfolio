@@ -108,17 +108,17 @@
   grid-template-columns: repeat(3, 1fr);  /* FIXED 3 columns */
   gap: 1rem;
 }
-    .cert-row {
-  display: grid;
+  .cert-row {
+  display: flex;
   justify-content: space-between;
   gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
+  flex-wrap: nowrap;   /* forces single row */
 }
 
 .cert-row .card {
   flex: 1;
   min-width: 0;
-}    
+}   
         .hobby-row {
   display: flex;
   justify-content: space-between;
