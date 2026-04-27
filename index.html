@@ -75,6 +75,23 @@
   font-size: 0.9rem;          /* smaller text */
   line-height: 1.4;
 }
+         .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+         .card p {
+  margin-bottom: 10px;
+}
+         .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* EXACTLY 2 cards */
+  gap: 1.5rem;
+}
+
+.projects-grid .card {
+  height: 100%;   /* makes both cards equal height */
+}
         .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* FIXED 3 columns */
@@ -178,7 +195,7 @@
      <!-- Projects -->
 <section id="projects">
   <h2>📊 Data Analytics Projects</h2>
-  <div class="grid">
+  <div class="projects-grid">
 
     <!-- Decision Explorer -->
     <div class="card">
