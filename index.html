@@ -60,7 +60,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
 }
-         , 
+         
         .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -83,6 +83,13 @@
          .card p {
   margin-bottom: 10px;
 }
+         .card img {
+  width: 40px;
+  height: 40px;              /* FIXED HEIGHT */
+  object-fit: contain;       /* prevents stretching */
+  margin: 0 auto 8px auto;   /* center align */
+  display: block;
+}
          .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* EXACTLY 2 cards */
@@ -91,6 +98,10 @@
 
 .projects-grid .card {
   height: 100%;   /* makes both cards equal height */
+}
+         .projects-grid .card img {
+  width: 50px;
+  height: 50px;
 }
         .skills-grid {
   display: grid;
@@ -113,6 +124,10 @@
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: nowrap;
+}
+         .hobby-row .card img {
+  width: 45px;
+  height: 45px;
 }
 }
          .card img {
@@ -322,7 +337,7 @@
       <!-- Certifications --> 
       <section id="certs">
          <h2>📜 Endorsements (Certifications)</h2>
-         <div class="cert=row">
+         <div class="cert-row">
             <ul>
                <div class="card">
                   <img src="https://img.icons8.com/color/96/certificate.png"/><b>AI & Analytics</b><br> 
@@ -391,7 +406,7 @@
       <!-- Hobbies --> 
       <section id="hobbies">
          <h2>🎨 Hobbies & Interests</h2>
-         <div class="hobby row">
+         <div class="hobby-row">
             <div class="card"><img src="https://img.icons8.com/color/96/pencil.png"/><b>Sketching</b></div>
             <div class="card"><img src="https://img.icons8.com/color/96/paint-palette.png"/><b>Artworks</b></div>
             <div class="card"><img src="https://img.icons8.com/color/96/gardening.png"/><b>Gardening</b></div>
