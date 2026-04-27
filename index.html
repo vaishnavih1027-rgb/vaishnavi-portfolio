@@ -98,10 +98,10 @@
   gap: 1rem;
 }
     .cert-row {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   gap: 1rem;
-  flex-wrap: nowrap;   /* forces single row */
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .cert-row .card {
