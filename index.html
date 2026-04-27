@@ -56,11 +56,10 @@
          text-align: center; } 
          /* Features / Cards */ 
          .features {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         gap: 1.5rem;
-         margin-top: 2rem;
-         }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
          , 
          .grid { display: grid; 
          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -86,16 +85,33 @@
       <!-- Value Proposition --> 
       <section id="features">
          <h2>🌟 Why Choose Vaishnavi?</h2>
-         <div class="features">
-            <ul>
-               <div class="card"><img src="https://img.icons8.com/color/96/analytics.png"/><b>📈 Data-Driven Growth</b><br>Blend of analytics + storytelling to drive audience engagement & visibility.</div>
-               <div class="card"><img src="https://img.icons8.com/color/96/idea.png"/><b>💡 Creative Campaigns</b><br>Designed social media, SEO, and UGC strategies for startups & corporates.</div>
-            </ul>
-            <ul>
-               <div class="card"><img src="https://img.icons8.com/color/96/automation.png"/><b>⚡ Efficiency Builder</b><br>Automated workflows & dashboards → reduced manual effort by 30%.</div>
-               <div class="card"><img src="https://img.icons8.com/color/96/conference.png"/><b>🤝 Community Builder</b><br>Expertise in engagement, client acquisition & advocacy strategies.</div>
-            </ul>
-         </div>
+        <div class="features">
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/analytics.png"/>
+    <b>📈 Data-Driven Growth</b><br>
+    Blend of analytics + storytelling to drive engagement & insights.
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/idea.png"/>
+    <b>💡 Creative & Analytical Thinking</b><br>
+    Strong mix of business thinking + technical analytics.
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/automation.png"/>
+    <b>⚡ Automation & Efficiency</b><br>
+    Built dashboards & pipelines reducing manual effort by 30%.
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/conference.png"/>
+    <b>🤝 Stakeholder Collaboration</b><br>
+    Experience working with cross-functional teams and clients.
+  </div>
+
+</div>
          <div class="metrics">
             <div class="metric">30%<span>Faster Issue Resolution</span></div>
             <div class="metric">20%<span>Improved Reporting Accuracy</span></div>
