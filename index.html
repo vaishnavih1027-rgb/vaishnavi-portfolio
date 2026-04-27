@@ -108,17 +108,11 @@
   grid-template-columns: repeat(3, 1fr);  /* FIXED 3 columns */
   gap: 1rem;
 }
-  .cert-row {
-  display: flex;
-  justify-content: space-between;
+.cert-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in ONE row */
   gap: 1rem;
-  flex-wrap: nowrap;   /* forces single row */
 }
-
-.cert-row .card {
-  flex: 1;
-  min-width: 0;
-}   
         .hobby-row {
   display: flex;
   justify-content: space-between;
@@ -338,36 +332,50 @@
       <section id="certs">
          <h2>📜 Endorsements (Certifications)</h2>
          <div class="cert-row">
-            <ul>
-               <div class="card">
-                  <img src="https://img.icons8.com/color/96/certificate.png"/><b>AI & Analytics</b><br> 
-                  <li>IBM AI Fundamentals </li>
-                  <li> Data Science Essentials </li>
-                  <li>RESTful API </li>
-                  <li>Power BI Projects </li>
-               </div>
-               <div class="card">
-                  <img src="https://img.icons8.com/color/96/data-configuration.png"/><b>Cloud & Data</b><br> 
-                  <li>IBM Python for Data Science </li>
-                  <li> Data Visualization with Power BI </li>
-                  <li>Oracle Cloud Dev </li>
-               </div>
-            </ul>
-            <ul>
-               <div class="card">
-                  <img src="https://img.icons8.com/color/96/seo.png"/><b>Digital Marketing</b><br> 
-                  <li>Intro to Digital Marketing </li>
-                  <li> SEO for Beginners </li>
-               </div>
-               <div class="card">
-                  <img src="https://img.icons8.com/color/96/university.png"/><b>Academic & Domain</b><br> 
-                  <li>Minor degree in computer science </li>
-                  <li> Certificate in Finance </li>
-                  <li> Smart Power Control </li>
-                  <li> Wellness Certification </li>
-               </div>
-            </ul>
-         </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/certificate.png"/>
+    <b>AI & Analytics</b>
+    <ul>
+      <li>IBM AI Fundamentals</li>
+      <li>Data Science Essentials</li>
+      <li>RESTful API</li>
+      <li>Power BI Projects</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/data-configuration.png"/>
+    <b>Cloud & Data</b>
+    <ul>
+      <li>IBM Python for Data Science</li>
+      <li>Data Visualization with Power BI</li>
+      <li>Oracle Cloud Dev</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/seo.png"/>
+    <b>Digital Marketing</b>
+    <ul>
+      <li>Intro to Digital Marketing</li>
+      <li>SEO for Beginners</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <img src="https://img.icons8.com/color/96/university.png"/>
+    <b>Academic & Domain</b>
+    <ul>
+      <li>Minor degree in computer science</li>
+      <li>Certificate in Finance</li>
+      <li>Smart Power Control</li>
+      <li>Wellness Certification</li>
+    </ul>
+  </div>
+
+</div>
+   
       </section>
       <!-- Education --> 
       <section id="education">
