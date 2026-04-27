@@ -90,6 +90,15 @@
   margin: 0 auto 8px auto;   /* center align */
   display: block;
 }
+         .exp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 cards per row */
+  gap: 1.5rem;
+}
+
+.exp-grid .card {
+  text-align: left;
+}
          .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* EXACTLY 2 cards */
@@ -196,6 +205,55 @@
             <div class="metric">25+<span>Interns Trained</span></div>
             <div class="metric">3X<span>Campaign Engagement</span></div>
          </div>
+
+         <section id="experience">
+  <h2>💼 Professional Experience</h2>
+
+  <div class="exp-grid">
+
+    <!-- Current Role -->
+    <div class="card">
+      <b>Data Analyst – Operations & Support Analytics</b><br>
+      <small>Gilbarco Veeder-Root | Dec 2024 – Present</small>
+
+      <ul>
+        <li>SQL-based analysis across Salesforce & internal datasets</li>
+        <li>Reduced incident turnaround by 30%</li>
+        <li>Built anomaly detection & validation checks</li>
+        <li>Improved data accuracy by 25%</li>
+        <li>Automated reporting workflows (30% effort reduction)</li>
+      </ul>
+    </div>
+
+    <!-- PwC Role 1 -->
+    <div class="card">
+      <b>Data Analyst 2 – Oracle HCM Analytics</b><br>
+      <small>PwC AC, Bengaluru | May 2022 – Sep 2022</small>
+
+      <ul>
+        <li>Built OTBI dashboards for HR, Payroll, Benefits</li>
+        <li>Developed PL/SQL queries & procedures</li>
+        <li>Performed data validation & reconciliation</li>
+        <li>Improved reporting reliability & turnaround</li>
+      </ul>
+    </div>
+
+    <!-- PwC Role 2 -->
+    <div class="card">
+      <b>Data Analyst – Oracle HCM Analytics</b><br>
+      <small>PwC AC, Bengaluru | Sep 2021 – May 2022</small>
+
+      <ul>
+        <li>Improved reporting productivity by 15%</li>
+        <li>Analyzed workforce data using Power BI</li>
+        <li>Optimized payroll Fast Formulas</li>
+        <li>Trained 25+ interns on BI tools</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+         
      <!-- Projects -->
 <section id="projects">
   <h2>📊 Data Analytics Projects</h2>
@@ -264,6 +322,45 @@
          style="display:inline-block;margin:5px;background:#333;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">
          💻 GitHub
       </a>
+    </div>
+
+  </div>
+</section>
+
+         <section id="internships">
+  <h2>🎓 Internship Experience</h2>
+
+  <div class="exp-grid">
+
+    <div class="card">
+      <b>PSR Events</b><br>
+      <small>Jun 2017 – Dec 2019</small>
+
+      <ul>
+        <li>Managed logistics for 30+ events</li>
+        <li>Handled vendor selection & contracts</li>
+        <li>Budget planning & execution</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <b>Arni Garden Boutique</b><br>
+      <small>Jul 2020 – Dec 2020</small>
+
+      <ul>
+        <li>Designed digital marketing strategies</li>
+        <li>Increased startup revenue</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <b>Hindustan Aeronautical Limited</b><br>
+      <small>Jan 2020</small>
+
+      <ul>
+        <li>In-plant training in aircraft systems</li>
+        <li>Applied electrical & electronics concepts</li>
+      </ul>
     </div>
 
   </div>
