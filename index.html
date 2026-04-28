@@ -90,21 +90,48 @@
   margin: 0 auto 8px auto;   /* center align */
   display: block;
 }
-         .exp-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* 2 cards per row */
+   .exp-container {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
-.exp-grid .card {
-  text-align: left;
+.exp-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* LEFT small, RIGHT bigger */
+  gap: 1.5rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.exp-left {
+  font-weight: 500;
+}
+
+.exp-left span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.exp-right ul {
+  margin: 0;
+  padding-left: 18px;
 }
          .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* EXACTLY 2 cards */
   gap: 1.5rem;
 }
+.intern-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 in one row */
+  gap: 1rem;
+}
 
+.intern-row .card {
+  text-align: left;
+}
 .projects-grid .card {
   height: 100%;   /* makes both cards equal height */
 }
@@ -209,46 +236,58 @@
          <section id="experience">
   <h2>💼 Professional Experience</h2>
 
-  <div class="exp-grid">
+  <div class="exp-container">
 
-    <!-- Current Role -->
-    <div class="card">
-      <b>Data Analyst – Operations & Support Analytics</b><br>
-      <small>Gilbarco Veeder-Root | Dec 2024 – Present</small>
+    <!-- Role 1 -->
+    <div class="exp-row">
+      <div class="exp-left">
+        <b>Gilbarco Veeder-Root</b><br>
+        <small>Dec 2024 – Present</small><br>
+        <span>Data Analyst – Operations & Support Analytics</span>
+      </div>
 
-      <ul>
-        <li>SQL-based analysis across Salesforce & internal datasets</li>
-        <li>Reduced incident turnaround by 30%</li>
-        <li>Built anomaly detection & validation checks</li>
-        <li>Improved data accuracy by 25%</li>
-        <li>Automated reporting workflows (30% effort reduction)</li>
-      </ul>
+      <div class="exp-right">
+        <ul>
+          <li>SQL-based analysis across Salesforce & internal datasets</li>
+          <li>Reduced incident turnaround by 30%</li>
+          <li>Improved data accuracy by 25%</li>
+          <li>Automated reporting workflows (30% efficiency gain)</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- PwC Role 1 -->
-    <div class="card">
-      <b>Data Analyst 2 – Oracle HCM Analytics</b><br>
-      <small>PwC AC, Bengaluru | May 2022 – Sep 2022</small>
+    <!-- Role 2 -->
+    <div class="exp-row">
+      <div class="exp-left">
+        <b>PwC AC, Bengaluru</b><br>
+        <small>May 2022 – Sep 2022</small><br>
+        <span>Data Analyst 2 – Oracle HCM Analytics</span>
+      </div>
 
-      <ul>
-        <li>Built OTBI dashboards for HR, Payroll, Benefits</li>
-        <li>Developed PL/SQL queries & procedures</li>
-        <li>Performed data validation & reconciliation</li>
-        <li>Improved reporting reliability & turnaround</li>
-      </ul>
+      <div class="exp-right">
+        <ul>
+          <li>Built OTBI dashboards for HR & Payroll</li>
+          <li>Developed PL/SQL procedures</li>
+          <li>Improved reporting reliability</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- PwC Role 2 -->
-    <div class="card">
-      <b>Data Analyst – Oracle HCM Analytics</b><br>
-      <small>PwC AC, Bengaluru | Sep 2021 – May 2022</small>
+    <!-- Role 3 -->
+    <div class="exp-row">
+      <div class="exp-left">
+        <b>PwC AC, Bengaluru</b><br>
+        <small>Sep 2021 – May 2022</small><br>
+        <span>Data Analyst – Oracle HCM Analytics</span>
+      </div>
 
-      <ul>
-        <li>Improved reporting productivity by 15%</li>
-        <li>Analyzed workforce data using Power BI</li>
-        <li>Optimized payroll Fast Formulas</li>
-        <li>Trained 25+ interns on BI tools</li>
-      </ul>
+      <div class="exp-right">
+        <ul>
+          <li>Improved reporting productivity by 15%</li>
+          <li>Analyzed workforce data using Power BI</li>
+          <li>Trained 25+ interns</li>
+        </ul>
+      </div>
     </div>
 
   </div>
